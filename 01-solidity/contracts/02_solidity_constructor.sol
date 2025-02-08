@@ -7,7 +7,6 @@ contract SolidityConstructor {
 
     constructor(uint256 initialBalance) {
         balance = initialBalance;
-
         console.log("balance is now ", balance);
     }
 }

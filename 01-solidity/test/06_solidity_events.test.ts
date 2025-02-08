@@ -14,9 +14,7 @@ describe("SolidityEvents", function () {
     const INITIAL_BALANCE = 1_000_000;
 
     const ctcSolidityEvents = await SolidityEvents.deploy(
-      INITIAL_BALANCE,
-      account1
-    );
+       INITIAL_BALANCE);
 
     return { ctcSolidityEvents, account1 };
   }

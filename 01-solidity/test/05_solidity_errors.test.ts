@@ -13,11 +13,7 @@ describe("SolidityModifiers", function () {
     const SolidityErrors = await hre.ethers.getContractFactory("SolidityErrors");
     const INITIAL_BALANCE = 1_000_000;
 
-    const ctcSolidityErrors = await SolidityErrors.deploy(
-      INITIAL_BALANCE,
-      account1
-    );
-
+    const ctcSolidityErrors = await SolidityErrors.deploy(INITIAL_BALANCE, account1);
     return { ctcSolidityErrors, account1, account2 };
   }
 

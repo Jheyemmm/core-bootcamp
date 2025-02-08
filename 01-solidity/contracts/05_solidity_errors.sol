@@ -2,7 +2,7 @@
 pragma solidity ^0.8.9;
 import "hardhat/console.sol";
 
-error YouAreNotError();
+error NaayErrordiridol();
 
 contract SolidityErrors {
     address admin;
@@ -15,7 +15,7 @@ contract SolidityErrors {
 
     modifier isAdmin() {
         if (msg.sender != admin) {
-            revert YouAreNotError();
+            revert NaayErrordiridol();
         }
         _;
     }
