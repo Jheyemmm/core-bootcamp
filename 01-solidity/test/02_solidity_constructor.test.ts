@@ -13,10 +13,9 @@ describe("SolidityConstructor", function () {
     const SolidityConstructor = await hre.ethers.getContractFactory(
       "SolidityConstructor"
     );
-    const INITIAL_BALANCE = 1_000_000;
+    const INITIAL_BALANCE = 500_000;
 
-    const ctcSolidityConstructor = await SolidityConstructor.deploy(
-      INITIAL_BALANCE
+    const ctcSolidityConstructor = await SolidityConstructor.deploy(INITIAL_BALANCE
     );
 
     return { ctcSolidityConstructor, account1 };
